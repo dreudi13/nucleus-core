@@ -1,0 +1,37 @@
+{
+    "name": "dreudi13/nucleus-core",
+    "description": "The Core library for the framework Nucleus",
+    "type": "library",
+    "license": "GNU v3",
+    "authors": [
+        {
+            "name": "dreudi13",
+            "email": "dreudi.dev@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Nucleus\\Core\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "spec\\Nucleus\\Core\\": "spec"
+        }
+    },
+    "require": {
+        "php": "^8.0"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "8.0.x-dev",
+        "symfony/var-dumper": "5.x-dev",
+        "squizlabs/php_codesniffer": "4.0.x-dev"
+    },
+    "scripts": {
+        "desc": "vendor/bin/phpspec describe",
+        "spec": "vendor/bin/phpspec run",
+        "snif": "vendor/bin/phpcs",
+        "csfix": "vendor/bin/phpcbf"
+    }
+}

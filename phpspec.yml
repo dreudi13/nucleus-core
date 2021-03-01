@@ -1,0 +1,7 @@
+suites:
+
+    nucleus_core:
+        namespace: Nucleus\Core
+        psr4_prefix: Nucleus\Core
+
+formatter.name: pretty
